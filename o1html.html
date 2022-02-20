@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border - box;
+    }
+
+    html {
+        color: #333;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 1.1 rem;
+        text-transform: uppercase;
+        border-top: 1px solid #888;
+        border-bottom: 1px solid #888;
+        padding: 0.75rem 0;
+        margin-bottom: 2 rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: salmon;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    section+section {
+        margin-top: 2 rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+    }
+
+    .profile {
+        text-align: center;
+    }
+
+    .profile img {
+        border-radius: 9999px;
+        width: 10 rem;
+        height: 15 rem;
+    }
+
+    .profile p {
+        color: #888;
+        margin-bottom: 1 rem;
+        font-size: 1.25rem;
+    }
+
+    .contact ul {
+        margin-top: -2 rem;
+    }
+
+    .contact li {
+        text-align: right;
+        /* text-transform: uppercase; */
+        padding: 1 rem;
+        border-bottom: 1px solid #888;
+        color: #888;
+        font-size: 0.8rem;
+    }
+
+    body {
+        padding: 2rem 2.5rem;
+        background: linear-gradient(#dfe0db, #dfe0db 50%, #fcebe1 50%, #fcebe1);
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .skills>ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1 rem;
+    }
+
+    .timeline.event+.event {
+        padding-top: 1rem;
+    }
+
+    .event {
+        display: grid;
+        grid-template-columns: 9ch 1fr;
+    }
+
+    .content {
+        border-left: 1px solid rgb(10, 9, 9);
+        padding-left: 1rem;
+        margin-left: 1rem;
+    }
+
+    .content>h3+p {
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .resume {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        grid-gap: 4rem;
+        background-color: white;
+        padding: 3rem;
+        max-width: 1000px;
+        margin: auto;
+    }
+</style>
+
+<body>
+
+
+    <div class="resume">
+        <div class="column">
+            <section class="profile">
+                <h1>MANISHA KUMARI</h1>
+                <p>UG SCHOLAR</p>
+                <img src="photo.jpeg" alt="" height="150x150">
+            </section>
+            <section class="contact">
+                <h2>contact</h2>
+                <ul>
+                    <li>House no - 2947 , Sector - 47 c , chandigarh</li>
+                    <li><a href="manishakumari02feb@gmail.com"> manishakumari02feb@gmail.com</a></li>
+                    <li>9877427237</li>
+                </ul>
+            </section>
+            <section class="objectives">
+                Enthusiastic B.E. (COMPUTER SCIENCE) student eager to contribute to team success through hard work and
+                excellent organizational skills. I am flexible, reliable and possess excellent time keeping skills .
+            </section>
+            <section class="socials">
+                <ul>
+                    <li><img src="https://icons.veryicon.com/png/o/miscellaneous/very-thin-linear-icon/linkedin-103.png" height="20x20"><a href="https://www.linkedin.com/in/manisha-kumari-221837221/"><em>Manisha kumari</em></a></li>
+                    <li><img src="https://icon-library.com/images/instagram-icon-for-resume/instagram-icon-for-resume-17.jpg" height = "20x20" ><a href="https://instagram.com/manisha_kumari_02?utm_medium=copy_link"><em>manisha_kumari_02</em></a></li>
+                </ul>
+            </section>
+            <section class="skills">
+                <h2>capabilities/skills</h2>
+                <ul>
+                    <li>
+                        <h3>professional</h3>
+                        <ul>
+                            <li>CPP</li>
+                            <li>C</li>
+                            <li>MY SQL</li>
+                            <li>Machine learning</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Python</li>
+                            <li>Adobe Illustrator</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>personal</h3>
+                        <ul>
+                            <li>Paintings</li>
+                            <li>Handball</li>
+                            <li>writing</li>
+                            <li>reading novels</li>
+                            <li>listening music</li>
+                            <li>Dancing</li>
+                            <li>Badminton</li>
+                            <li></li>
+                        </ul>
+                    </li>
+            </section>
+        </div>
+        <div class="column">
+            <section class="education">
+                <h2>education </h2>
+                <ul class="timeline">
+                    <li class="event">
+                        <span class="duration">2020 – present <i>chandigarh</i></span>
+                        <div class="content">
+                            <h3>Bachelor of Engineering CSE,</h3>
+                            <p><em><b>CCET</b></em></p>
+                            <p>cgpa = (9.10 /10) till 2nd semester</p>
+                            
+                        </div>
+                    </li>
+                    <li class="event">
+                        <span class="duration">2018 – 2020 <i>chandigarh</i>
+                        
+                        </span>
+                        
+                        <div class="content">
+                            <h3>  senior secondary school
+                            </h3>
+                            <p><em> <b>kendriya vidyalaya sector -47
+                            </b></em></p>
+                    <p>percentage = 95.4%</p>
+                        </div>
+                    </li>
+                    <li class="event">
+                        <span class="duration">2013 - 2018 <i>chandigarh</i></span>
+                        <div class="content">
+                            <h3> secondary school
+                            </h3>
+                            <p><em> <b>kendriya vidyalaya sector -47
+                            </em></b></p>
+                    <p>percentage = 97%</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="experience">
+                <h2>experience</h2>
+                <ul class="timeline">
+                    <li class="event">
+                        <span class="duration">2021 - present <b>Chandigarh India</b></span>
+                        <div class="content">
+                            <h3>Vice chair at ccet acm - W</h3>
+                            <p>.The Association for Computing Machinery's Council on Women in Computing (ACM-W) supports, celebrates, and advocates internationally for the full engagement of women in all aspects of the computing field, providing a wide range of programs and services to ACM members and working in the larger community to advance the contributions of technical women. ACM-W is an active organization with over 36,000 members of which ccet acm-w is a part .</p>
+                        </div>
+                    </li>
+                    <li class="event">
+                        <span class="duration">2021-present <b>Chandigarh India</b> </span>
+                        <div class="content">
+                            <h3>Member at CCET ACM Student Chapter</h3>
+                            <p>The Association for Computing Machinery (ACM) is an international learned
+                                society for computing. It was founded in 1947 and is the worldʼs largest
+                                scientific and educational computing society. . Its membership is more than
+                                100,000 as of 2011. The ACM is an umbrella organization for academic and
+                                scholarly interests in computer science .</p>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </section>
+        </div>
+
+    </div>
+</body>
+
+</html>
